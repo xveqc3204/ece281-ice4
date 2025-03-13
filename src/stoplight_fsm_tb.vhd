@@ -56,7 +56,7 @@ end stoplight_fsm_tb;
 architecture behavior of stoplight_fsm_tb is 
  
     -- Component Declaration for the Unit Under Test (UUT)
-    component stoplight_fsm
+    component stoplight_fsm is
     port(
          i_C 	 : in  std_logic;
          i_reset : in  std_logic;
@@ -65,8 +65,8 @@ architecture behavior of stoplight_fsm_tb is
          o_Y 	 : out  std_logic;
          o_G 	 : out  std_logic
         );
-    end component;
-    
+    end component stoplight_fsm;
+    --
 
 	--Inputs
 	signal w_C : std_logic := '0';
