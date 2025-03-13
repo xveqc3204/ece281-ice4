@@ -66,7 +66,7 @@ architecture behavior of stoplight_fsm_tb is
          o_G 	 : out  std_logic
         );
     end component stoplight_fsm;
-    --
+    ----
 
 	--Inputs
 	signal w_C : std_logic := '0';
